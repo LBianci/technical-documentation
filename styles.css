@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    background-size: auto;
+    background-repeat:repeat;
+    color: #333;
+  }
+  
+  /* Navbar Styling */
+  #navbar {
+    background-color: burlywood;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #navbar header {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #navbar ul li {
+    margin: 0.5rem 0;
+  }
+  
+  #navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+  }
+  
+  #navbar ul li a:hover {
+    background-color: brown;
+    color: white;
+  }
+  
+  /* Main Section Styling */
+  .main-section {
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .main-section header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 1rem;
+  }
+  
+  .main-section p {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main-section ul,
+  .main-section ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .main-section li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  code {
+    background-color: #f5deb3;
+    color: brown;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    #navbar {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+  
+    #navbar ul {
+      gap: 0.5rem;
+    }
+  
+    .main-section {
+      margin: 2rem auto;
+      padding: 2rem 3rem;
+    }
+  }
+  
+  /* Additional Styling for Consistency */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
